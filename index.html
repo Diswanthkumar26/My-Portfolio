@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diswanth-Portfolio</title>
+    <link rel="stylesheet" href="./Assets/Css/index.css">
+    <link rel="stylesheet" href="./Assets/Css/home.css">
+    <link rel="stylesheet" href="./Assets/Css/aboutme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid ps-0 pe-0">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid ">
+                <a class="navbar-brand">Portfolio</a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item hideOnMobile">
+                        <a class="nav-l " href="#">Home</a>
+                    </li>
+                    <li class="nav-item hideOnMobile">
+                        <a class="nav-l " href="#">About</a>
+                    </li>
+                    <li class="nav-item hideOnMobile">
+                        <a class="nav-l " href="#">Skills</a>
+                    </li>
+                    <li class="nav-item hideOnMobile">
+                        <a class="nav-l" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item hideOnMobile">
+                        <a class="nav-l" href="#">Education</a>
+                    </li>
+                    <li class="nav-item hideOnMobile">
+                        <a class="nav-l disabled text-secondary" href="#">Contact</a>
+                    </li>
+                    <li onclick="showSidebar()" class="nav-item hideOnLargeScreen">
+                        <a class="nav-1 " href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" container-flui sidebar" id="sidebar">
+                <ul class="nav ">
+                    <li  onclick="hideSidebar()" class="nav-item justify-content-end">
+                        <a class="nav-3 justify-content-end" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-2" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-2" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-2" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-2" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-2 " href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- ==========================================================================End of navbar ============================================================-->
+    
+ 
+    <div class="shape-2">
+        <img src="./Assets/images/home/shape-2.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="shape-3">
+        <img src="./Assets/images/home/shape-3.png" alt="" class="img-fluid">
+    </div>
+
+ 
+
+    <!-- ==========================================================================Home starts ==============================================================-->
+    <section class="home" id="home" style="background-image: url(./Assets/images/home/bg-home.png)">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-lg-12 d-flex">
+                    <div class="col-lg-6">
+                        <div class="content-item">
+                            <p class="text-warning mb-0">Hello! I AM <span class="say-hi">👋</span></p>
+                            <p class="name">DiswanthKumar</p>
+                            <div class="home-title mb-0 text-dark fw-bold h1">
+                                <span class="typewrite">
+                                    <span class="wrap"></span>
+                                </span>
+                            </div>
+                            <p class="mt-3 text-muted">I am a passionate frontend developer skilled in creating responsive and user-friendly web interfaces. I specialize in technologies like HTML, CSS, JavaScript, and frameworks like React andBootstrap.My focus is on delivering visually appealing designs with seamless functionality
+                            </p>
+                            <div class="icon-item mt-4">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <div class="social-icon github avatar-sm">
+                                            <i class="fa-brands fa-github"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="social-icon instagram avatar-sm">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="social-icon email avatar-sm">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="social-icon linkedin avatar-sm">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="social-icon facebook avatar-sm">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-items-center">
+                        <div class="allShape">
+                            <div class="gtriShape" id="gray-triangle"></div>
+                            <div class="boxShape" id="box"></div>
+                            <div class="circleShape" id="circle"></div>
+                            <di class="rectShape" id="rectangle"></div>
+                            <div class="waveShape" id="wave-line"></div>
+                            <div class="triShape" id="triangle"></div>
+                            <div class="dot-grid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ========================================================================== End of Home ==============================================================-->
+
+<!-- ==========================================================================About starts ==============================================================-->
+<section class="section about-me" id="aboutme">
+    <!-- container -->
+    <div class="container">
+        <div class="about-box">
+            <div class="row">
+                <div class="col-lg-6 position-relative">
+                    <div class="image-round">
+                        <!-- <div class="night">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div> -->
+                        <div class="about-image  pb-0">
+                            <img src="./Assets/images/aboutme/Luffy_Icons-removebg-preview.png" alt="" class="img-fluidm">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-item p-5">
+                        <h2 class="display-5 fw-semibold">About Me</h2>
+                        <p class="text-muted fs-14 challenge">"I strive to stay updated with the latest trends in full-stack development and constantly challenge myself to learn and grow in both frontend and backend technologies."</p> 
+                        <p class="text-muted fs-14">"I'm 21 years old and have had a passion for coding and design since a young age, which has led me to dedicate my life to mastering both."</p>
+                        <p class="text-muted fs-14">
+                            "I am a recent graduate with a Bachelor's degree in Computer Applications from AM.Jain College, affiliated with Madras University. In 2024, I enhanced my coding and design skills at Greens Technology, and I'm eager to apply my knowledge as a fresher in the field. I am excited to explore the world of coding and design, and I believe that with my passion and dedication, I can make a positive impact on the industry."</p>
+                    </div>
+                    <div class="cv d-flex justify-content-center align-items-center">
+                        <button class="download-cv-btn ms-5 me-5"> Download CV  <i class="fa-solid fa-download"></i> </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+</section>
+<!-- ==========================================================================About ends ==============================================================-->
+<!-- ========================================================================== Qualifications ==============================================================-->
+<section class="Qualifications">
+    
+</section>
+
+
+
+
+
+<!-- ==========================================================================  Scripts ==============================================================-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./Assets/Js/index.js"></script>
+    <script src="./Assets/Js/sidebar.js"></script>
+</body>
+
+</html>
