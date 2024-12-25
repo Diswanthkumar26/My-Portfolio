@@ -9,3 +9,4 @@ function hideSidebar() {
     document.getElementById("sidebar").style.transform = "translateX(100%)";
     document.getElementById("sidebar").style.transition = "transform 0.3s ease-in-out"; 
 }
+
