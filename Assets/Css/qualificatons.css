@@ -40,27 +40,6 @@
         border-color: #ffcd00
     }
 }
-
-@keyframes bg-change {
-
-    0%,
-    100% {
-        background-color: #2fb4ae
-    }
-
-    25% {
-        background-color: #2558ab
-    }
-
-    50% {
-        background-color: #c71f1f
-    }
-
-    75% {
-        background-color: #ffcd00
-    }
-}
-
 .education-items{
     
     background-image: url(./Brand+shapes-22_enhanced.png);
@@ -80,33 +59,13 @@
 .education-items:hover{
     gap: 30px;
 }
-.ul1{
-    background-image: url(./png-transparent-yllow-removebg-preview.png);
-    background-size: 50% 100%;
-    background-position: left -50% bottom;
-    background-repeat: no-repeat;
-}
-.ul2{
-    background-image: url(./png-transparent-yllow-removebg-preview.png);
-    background-size: 80% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-.ul3{
-    background-image: url(./png-transparent-yllow-removebg-preview.png);
-    background-size: 50% 100%;
-    background-position: right -50% bottom;
-    background-repeat: no-repeat;
-    justify-content: start;
-}
 
 .education-items .education-item{
     position: relative;
     list-style: none;
     width: 450px;
     height: 100px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 6px;
     background: whitesmoke;
     transition: 0.5s;
