@@ -403,8 +403,8 @@
     }
     #triangle {
         position: relative;
-        top: -5%;
-        left: 18%;
+        top: -3%;
+        left: 16%;
         border-left: 132px solid transparent;
         border-right: 122px solid transparent;
         border-bottom: 129px solid black;
@@ -420,7 +420,7 @@
       
       #gray-triangle {
         top: 30px;
-        left: 49px;
+        left: 38px;
         border-left: 99px solid transparent;
         border-right: 99px solid transparent;
         border-bottom: 85px solid #ffbf00;

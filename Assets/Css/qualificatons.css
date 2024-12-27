@@ -1,16 +1,38 @@
-.qualifications .qualifications-box {
-    border-radius: 20px;
-    height: 94vh;
-    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
+.qualifications{
+    /* margin-bottom: 10%; */
+    height: 91vh;
+    
 }
+.qualifications-title{
+    color: white;
+    margin-bottom: 10px;
+}
+.shape-svg1 svg{
+    position: absolute;
+    /* top: 0%; */
+    left: 0;
+    z-index: -1;
+    
+}
+.shape-svg2 svg{
+    position: absolute;
+    top: 293.5%;
+    left: 0;
+}
+/* .qualifications .qualifications-box {
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
+} */
 .qualifications .qualifications-box .nav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .qualifications .nav-pills .nav-item .nav-link {
-    color: #979797;
-    margin: 0 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.0em;
+    margin: -53px 55px 0 55px;
     border-radius: 0 !important
 }
 
@@ -27,7 +49,6 @@
     100% {
         border-color: #2fb4ae
     }
-
     25% {
         border-color: #2558ab
     }
@@ -40,24 +61,24 @@
         border-color: #ffcd00
     }
 }
+
 .education-items{
-    
-    background-image: url(./Brand+shapes-22_enhanced.png);
-    background-size: 50% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     transform-style: preserve-3d;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 400px;
     gap: 0px;
     transition: 0.5s;
+    z-index: 1;
 }
 .education-items:hover{
-    gap: 30px;
+    gap: 20px;
+}
+.ul2{
+    justify-content: center;
 }
 
 .education-items .education-item{
@@ -151,3 +172,221 @@
 .education-items .education-item:hover .box .Education-content span{
     color: black;
 }
+
+ /* responive ===========================================================================================================	 */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    .shape-svg2 svg{
+        top: 285.5%;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .shape-svg2 svg{
+        top: 355.5%;
+    }
+    .qualifications .nav-pills .nav-item .nav-link {
+        font-size: 0.8em;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .shape-svg2 svg{
+        top: 366.2%;
+    }
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: black;
+        font-size: 0.8em;
+        margin: -40px 75px 0 75px;;
+    }
+    .education-items{
+        height: 350px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 400px;
+        height: 90px;
+        padding: 4px;
+    }
+
+    .education-items .education-item .box img {
+        max-width: 60px;
+        height: 60px;
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 18px;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 14px;
+    }
+ }
+ 
+ @media (min-width: 460px) and (max-width: 575.98px) {
+    .qualifications-title{
+        color: black;   
+        font-size: 18px;    
+    }
+    .shape-svg2 svg{
+        top: 320.2%;
+    }
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: black;
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .education-items{
+        height: 300px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 350px;
+        height: 80px;
+        padding: 4px;
+    }
+    .education-items .education-item .box {
+        gap: 5px;
+    }
+    .education-items .education-item .box img {
+        max-width: 50px;
+        height: 50px;
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 16px;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 12px;
+    }
+ }
+ @media (min-width: 0px) and (max-width: 459.98px) {
+    .qualifications-title{
+        color: black;   
+        font-size: 16px;    
+    }
+    .shape-svg2 svg{
+        top: 316.2%;
+    }
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: black;
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .education-items{
+        height: 300px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 300px;
+        height: 70px;
+        padding: 4px;
+    }
+    .education-items .education-item .box {
+        gap: 4px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+    .education-items .education-item .box .Education-content span{
+        font-size: 10px;
+    }
+    .education-items .education-item .box img {
+        max-width: 45px;
+        height: 45px;
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+ }
