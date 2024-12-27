@@ -1,16 +1,38 @@
-.qualifications .qualifications-box {
-    border-radius: 20px;
-    height: 94vh;
-    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
+.qualifications{
+    margin-bottom: 10%;
+    height: 88vh;
+    
 }
+.qualifications-title{
+    color: white;
+    margin-bottom: 10px;
+}
+.shape-svg1 svg{
+    position: absolute;
+    /* top: 0%; */
+    left: 0;
+    z-index: -1;
+    
+}
+.shape-svg2 svg{
+    position: absolute;
+    top: 300.5%;
+    left: 0;
+}
+/* .qualifications .qualifications-box {
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
+} */
 .qualifications .qualifications-box .nav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .qualifications .nav-pills .nav-item .nav-link {
-    color: #979797;
-    margin: 0 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.0em;
+    margin: -53px 55px 0 55px;
     border-radius: 0 !important
 }
 
@@ -27,7 +49,6 @@
     100% {
         border-color: #2fb4ae
     }
-
     25% {
         border-color: #2558ab
     }
@@ -40,12 +61,8 @@
         border-color: #ffcd00
     }
 }
+
 .education-items{
-    
-    background-image: url(./Brand+shapes-22_enhanced.png);
-    background-size: 50% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     transform-style: preserve-3d;
     display: flex;
@@ -55,9 +72,13 @@
     height: 400px;
     gap: 0px;
     transition: 0.5s;
+    z-index: 1;
 }
 .education-items:hover{
     gap: 30px;
+}
+.ul3{
+    justify-content: start;
 }
 
 .education-items .education-item{
