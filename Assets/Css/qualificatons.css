@@ -1,10 +1,10 @@
 .qualifications{
-    /* margin-bottom: 10%; */
+    margin-bottom: 10%;
     height: 91vh;
     
 }
 .qualifications-title{
-    color: white;
+    color: black;
     margin-bottom: 10px;
 }
 .shape-svg1 svg{
@@ -29,7 +29,7 @@
     align-items: center;
 }
 .qualifications .nav-pills .nav-item .nav-link {
-    color: #fff;
+    color: black;
     font-weight: 600;
     font-size: 1.0em;
     margin: -53px 55px 0 55px;
