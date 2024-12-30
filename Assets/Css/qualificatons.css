@@ -1,6 +1,7 @@
 .qualifications{
     margin-bottom: 10%;
-    height: 91vh;
+    height: 95vh;
+    border-bottom: 2px solid #ffcd00;
     
 }
 .qualifications-title{
@@ -9,16 +10,15 @@
 }
 .shape-svg1 svg{
     position: absolute;
-    /* top: 0%; */
     left: 0;
     z-index: -1;
     
 }
-.shape-svg2 svg{
+/* .shape-svg2 svg{
     position: absolute;
     top: 293.5%;
     left: 0;
-}
+} */
 /* .qualifications .qualifications-box {
     border-radius: 20px;
     box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     height: 400px;
     gap: 0px;
     transition: 0.5s;
@@ -181,7 +181,7 @@
  }
  @media (min-width: 768px) and (max-width: 991.98px) {
     .shape-svg2 svg{
-        top: 355.5%;
+        top: 346.5%;
     }
     .qualifications .nav-pills .nav-item .nav-link {
         font-size: 0.8em;
@@ -317,9 +317,13 @@
     }
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
+    .qualifications{
+        height: 85vh;
+    }
     .qualifications-title{
         color: black;   
-        font-size: 16px;    
+        font-size: 16px; 
+           
     }
     .shape-svg2 svg{
         top: 316.2%;
