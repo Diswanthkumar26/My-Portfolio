@@ -1,0 +1,118 @@
+.Projects{
+    height: 95vh;
+}
+.projects-cards{
+    position: relative;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.projects-cards .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;    
+}
+.col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card:hover{
+    height: 410px;
+}
+
+.container .card .img-bx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+}
+.container .card .img-bx img{
+    max-width: 100%;
+    height: 260px;
+    border-radius: 4px;
+
+}
+.container .card .content{
+    /* position: relative; */
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;  
+}
+.container .card .content .fs-15{
+    font-size: 15px;
+    font-weight: 600;
+}
+.container .card .content .fs-12{
+    font-size: 12px;
+}
+ .shape-1 {
+    position: absolute;
+    right: 10%;
+    animation: translatescale 6s linear infinite
+  }
+
+  @keyframes translatescale {
+    0% {
+      transform: translatey(0px)
+    }
+  
+    20% {
+      transform: translatey(50px)
+    }
+  
+    40% {
+      transform: scale(1.2)
+    }
+  
+    80% {
+      transform: rotate(80deg)
+    }
+  
+    100% {
+      transform: translatey(0px)
+    }
+  }
+  .shape-4 {
+    position: absolute;
+    top: 530%;
+    left: 2%;
+    z-index: 2;
+    animation: translate 10s linear infinite;
+  }
+  
+  @keyframes translate {
+    0% {
+      transform: translatey(0px)
+    }
+  
+    20% {
+      transform: translatey(50px)
+    }
+  
+    60% {
+      transform: rotate(-180deg)
+    }
+  
+    100% {
+      transform: translatey(0px)
+    }
+  }

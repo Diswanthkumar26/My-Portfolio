@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  width: 3px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: gray;
+  border-radius: 10px;
+}
 
 .navbar {
   position: absolute;
