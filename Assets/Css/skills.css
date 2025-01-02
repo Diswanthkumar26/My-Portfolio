@@ -190,7 +190,7 @@
  
  @media (min-width: 460px) and (max-width: 575.98px) {
     .Skills{
-        height: 155vh;
+        height: 130vh;
         margin-bottom: 10%;
     }
     .carding{
@@ -212,6 +212,5 @@
  @media (min-width: 0px) and (max-width: 459.98px) {
     .Skills{
         height: 380vh;
-        margin-bottom: 10%;
     }
  }
