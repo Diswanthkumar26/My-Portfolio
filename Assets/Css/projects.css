@@ -69,7 +69,7 @@
 .project-cards .card:hover .content{
   top: 120px;
   height: 190px;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 .project-name{
   font-size: 15px;
@@ -104,31 +104,6 @@
       transform: translatey(0px)
     }
   }
-  .shape-4 {
-    position: absolute;
-    top: 530%;
-    left: 2%;
-    z-index: 2;
-    animation: translate 10s linear infinite;
-  }
-  
-  @keyframes translate {
-    0% {
-      transform: translatey(0px)
-    }
-  
-    20% {
-      transform: translatey(50px)
-    }
-  
-    60% {
-      transform: rotate(-180deg)
-    }
-  
-    100% {
-      transform: translatey(0px)
-    }
-  }
 
  /* responive ===========================================================================================================	 */
   @media (min-width: 1200px) and (max-width: 1399.98px) {
@@ -148,5 +123,8 @@
 
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-
+  .project-cards {
+    gap: 100px 50px;
+    padding: 50px 0px;
+}
  }
