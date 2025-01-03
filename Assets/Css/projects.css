@@ -1,5 +1,6 @@
 .Projects{
-  height: 110vh;
+  height: 91vh;
+  margin-bottom: 10%;
 }
 .cards-body{
   display: flex;
@@ -123,8 +124,11 @@
 
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
+  .cards-body{
+    height: 100vh;
+  }
   .project-cards {
     gap: 100px 50px;
     padding: 50px 0px;
-}
+ }
  }
