@@ -1,6 +1,6 @@
  .contact-me{
      background-color: whitesmoke;
-     height: 100vh;
+     min-height: 100vh;
  }
  .contact-box .contact-detials .display-5 span{
      color: #ffcd00;
@@ -93,5 +93,41 @@
      0 0 25px #ffcd00,0 0 50px #ffcd00,
      0 0 100px cyan, 0 0 200px cyan;
  }
+
+  /* responive ===========================================================================================================	 */
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .d-flex .social-icon i {
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+    .d-flex .social-icon i {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  
+    .d-flex .social-icon i {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 0px) and (max-width: 575.98px) {
+
+  .d-flex .social-icon i {
+      width: 30px;
+      height: 30px;
+      font-size: 19.5px;
+  }
+  
+}  
  
    

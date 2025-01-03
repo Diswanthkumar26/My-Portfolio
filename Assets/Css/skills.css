@@ -1,7 +1,10 @@
 .Skills{
+    align-items: center;
+    justify-content: center;
+    display: flex;
     background-color: whitesmoke;
     padding: 10px 0;
-    height: 90vh;
+    min-height: 70vh;
     margin-bottom: 10%;
 }
 .container1{
@@ -148,9 +151,9 @@
     }
  }
  @media (min-width: 768px) and (max-width: 991.98px) {
-    .Skills{
+    /* .Skills{
         height: 100vh;
-    }
+    } */
     .carding{
         width: 9rem;
         height: 9rem;
@@ -168,10 +171,9 @@
 
  }
  @media (min-width: 576px) and (max-width: 767.98px) {
-    .Skills{
+    /* .Skills{
         height: 135vh;
-        margin-bottom: 10%;
-    }
+    } */
     .carding{
         width: 9rem;
         height: 9rem;
@@ -189,10 +191,9 @@
  }
  
  @media (min-width: 460px) and (max-width: 575.98px) {
-    .Skills{
+    /* .Skills{
         height: 155vh;
-        margin-bottom: 10%;
-    }
+    } */
     .carding{
         width: 9rem;
         height: 9rem;
@@ -210,7 +211,7 @@
 
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-    .Skills{
+    /* .Skills{
         height: 380vh;
-    }
+    } */
  }
