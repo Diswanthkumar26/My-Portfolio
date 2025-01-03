@@ -405,7 +405,7 @@
     #triangle {
         position: relative;
         top: -3%;
-        left: 16%;
+        left: 9%;
         border-left: 132px solid transparent;
         border-right: 122px solid transparent;
         border-bottom: 129px solid black;
@@ -420,8 +420,8 @@
       }
       
       #gray-triangle {
-        top: 30px;
-        left: 38px;
+        top: 50px;
+        left: 15px;
         border-left: 99px solid transparent;
         border-right: 99px solid transparent;
         border-bottom: 85px solid #ffbf00;
@@ -429,21 +429,21 @@
       
       #box {
         top: 0px;
-        left: 190px;
+        left: 170px;
         width: 40px;
         height: 40px;
       }
       
       #circle {
         top: 90px;
-        left: 220px;
+        left: 200px;
         width: 12px;
         height: 12px;
       }
       
       #rectangle {
         top: 122px;
-        left: 221px;
+        left: 201px;
         width: 10px;
         height: 40px;
       }
