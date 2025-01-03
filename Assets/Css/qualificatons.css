@@ -1,6 +1,6 @@
 .qualifications{
     margin-bottom: 10%;
-    height: 95vh;
+    min-height: 70vh;
     border-bottom: 2px solid #ffcd00;
     
 }
@@ -175,22 +175,13 @@
 
  /* responive ===========================================================================================================	 */
  @media (min-width: 992px) and (max-width: 1199.98px) {
-    .shape-svg2 svg{
-        top: 285.5%;
-    }
  }
  @media (min-width: 768px) and (max-width: 991.98px) {
-    .shape-svg2 svg{
-        top: 346.5%;
-    }
     .qualifications .nav-pills .nav-item .nav-link {
         font-size: 0.8em;
     }
  }
  @media (min-width: 576px) and (max-width: 767.98px) {
-    .shape-svg2 svg{
-        top: 366.2%;
-    }
     .qualifications .nav-pills .nav-item .nav-link {
         color: black;
         font-size: 0.8em;
@@ -254,9 +245,6 @@
         color: black;   
         font-size: 18px;    
     }
-    .shape-svg2 svg{
-        top: 320.2%;
-    }
     .qualifications .nav-pills .nav-item .nav-link {
         color: black;
         font-size: 0.8em;
@@ -317,9 +305,9 @@
     }
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-    .qualifications{
+    /* .qualifications{
         height: 85vh;
-    }
+    } */
     .qualifications-title{
         color: black;   
         font-size: 16px; 

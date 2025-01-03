@@ -27,10 +27,12 @@
 
 .navbar-brand {
   font-weight: 600;
-  background: linear-gradient(45deg, rgb(49, 48, 48), #ffbf00);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  margin-left: 30px;
+  width: 50px;
+  height: 45px;
+  text-align: center;
+  border-radius: 50% ;
+  background: #ffbf00;
   transition: .4s;
 }
 
@@ -114,30 +116,24 @@
   justify-content: flex-start;
 
 }
-
 .sidebar li {
   width: 100%;
 
 }
-
 .sidebar a {
   width: 50%;
 }
-
-
-
-
+.nav-item2 svg{
+  margin-left: 270px;
+  margin-top: 15px;
+  cursor: pointer;
+}
 .hideOnLargeScreen {
   display: none;
 }
-
 .hideOnMobile {
   display: flex;
 }
-
-
-/* ====================================================================End of navbar======================================================================== */
-
 
 /*=================================================================== Responsive Media Queries ============================================================== */
 @media (min-width: 1200) and (max-width: 1499.98px) {}
