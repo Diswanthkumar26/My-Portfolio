@@ -27,16 +27,11 @@
 
 .navbar-brand {
   font-weight: 600;
-  margin-left: 30px;
-  width: 50px;
-  height: 45px;
-  text-align: center;
-  border-radius: 50% ;
-  background: #ffbf00;
+  background: linear-gradient(45deg, rgb(49, 48, 48), #ffbf00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   transition: .4s;
-}
-.navbar-brand a{
-    color: white;
 }
 
 .nav-l {
