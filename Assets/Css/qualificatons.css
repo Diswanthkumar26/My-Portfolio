@@ -1,19 +1,20 @@
 .qualifications{
     margin-bottom: 10%;
-    min-height: 70vh;
-    border-bottom: 2px solid #ffcd00;
+    min-height: 90vh;
+    background-color: whitesmoke;
+    /* border-bottom: 2px solid #ffcd00; */
     
 }
 .qualifications-title{
     color: black;
     margin-bottom: 10px;
 }
-.shape-svg1 svg{
+/* .shape-svg1 svg{
     position: absolute;
     left: 0;
     z-index: -1;
     
-}
+} */
 /* .shape-svg2 svg{
     position: absolute;
     top: 293.5%;
@@ -32,7 +33,7 @@
     color: black;
     font-weight: 600;
     font-size: 1.0em;
-    margin: -53px 55px 0 55px;
+    margin: -20px 55px 0 55px;
     border-radius: 0 !important
 }
 
@@ -305,9 +306,9 @@
     }
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-    /* .qualifications{
-        height: 85vh;
-    } */
+    .qualifications{
+        height: 60vh;
+    }
     .qualifications-title{
         color: black;   
         font-size: 16px; 
