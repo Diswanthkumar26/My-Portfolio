@@ -247,10 +247,6 @@
     /* .qualifications{
         height: 60vh;
     } */
-    .qualifications-title{
-        color: black;   
-        font-size: 18px;    
-    }
     .qualifications .nav-pills .nav-item .nav-link {
         color: black;
         font-size: 0.8em;
@@ -314,11 +310,6 @@
     /* .qualifications{
         height: 60vh;
     } */
-    .qualifications-title{
-        color: black;   
-        font-size: 16px; 
-           
-    }
     .shape-svg2 svg{
         top: 316.2%;
     }
