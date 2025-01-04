@@ -255,7 +255,7 @@
         padding-left: 0rem;
     }
     .education-items:hover {
-        gap: 25px;
+        gap: 50px;
     }
     .education-items .education-item {
         width: 350px;
