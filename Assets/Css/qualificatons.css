@@ -62,14 +62,16 @@
         border-color: #ffcd00
     }
 }
-
+.tab-content .ul1{
+    padding-left: 0 !important;
+}
 .education-items{
     position: relative;
     transform-style: preserve-3d;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 400px;
     gap: 0px;
     transition: 0.5s;
@@ -138,10 +140,10 @@
     transform: 0.5s;
 }
 .ul3 .education-item:nth-child(1){
-    transform: translateZ(75px) translate(-50px, 100px) rotate(30deg);
+    transform: translateZ(75px) translate(-50px, 100px) rotate(12deg);
 }
 .ul3 .education-item:nth-child(2){
-    transform: translateZ(-75px) translate(-70px, 60px) rotate(-30deg);
+    transform: translateZ(-75px) translate(-30px, 30px) rotate(-22deg);
 }
 .ul3:hover .education-item{
     transform: translateZ(0px) translate(0px,0px) rotate(0deg);
