@@ -253,7 +253,7 @@
   
   .shape-2 {
     position: absolute;
-    bottom: 10%;
+    top: 70%;
     right: 20%;
     z-index: 2;
     animation: translate 10s linear infinite;
@@ -280,7 +280,7 @@
   .shape-3 {
     position: absolute;
     animation: translatescale 4s linear infinite;
-    top: 20%;
+    top: 15%;
     left: 2%;
     z-index: 2;
   }
@@ -310,6 +310,9 @@
   /* responive ===========================================================================================================	 */
 
 @media (min-width: 1400px) and (max-width: 1599.98px) {
+  .shape-2 {
+    top: 50%;
+  }
 
   #gray-triangle {
     top: 15px;
@@ -411,6 +414,9 @@
       .dot-grid {
         display: none;
       }
+      .shape-2 {
+        top: 45%;
+      }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
     .home{
@@ -479,6 +485,10 @@
       #wave-line {
         display: none;
       }
+      
+  .shape-2 {
+    top: 35%;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
     .home{
@@ -526,6 +536,10 @@
       #wave-line {
         display: none;
       }
+      
+  .shape-2 {
+    top: 40%;
+  }
 
 }
 @media (min-width: 0px) and (max-width: 575.98px) {
@@ -578,5 +592,9 @@
       #wave-line {
         display: none;
       }
+      
+  .shape-2 {
+    top: 43%;
+  }
   
 }
