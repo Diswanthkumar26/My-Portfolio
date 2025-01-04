@@ -279,7 +279,7 @@
   .shape-3 {
     position: absolute;
     animation: translatescale 4s linear infinite;
-    top: 10%;
+    top: 20%;
     left: 2%;
     z-index: 2;
   }
@@ -308,6 +308,35 @@
 
   /* responive ===========================================================================================================	 */
 
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+
+  #gray-triangle {
+    top: 15px;
+    left: 280px;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+  }
+  
+  #box {
+    top: -27px;
+    left: 470px;
+  }
+  
+  #circle {
+    top: 90px;
+    left: 515px;
+  }
+  
+  #rectangle {
+    top: 130px;
+    left: 517px;
+  }
+  
+  #wave-line {
+    top: 85px;
+    left: 775px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .home{
         background-repeat: no-repeat;

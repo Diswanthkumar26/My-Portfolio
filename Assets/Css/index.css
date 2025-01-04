@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+section{
+  padding-top: 4.5%;
+}
 ::-webkit-scrollbar{
-  width: 3px;
+  width: 5px;
 }
 ::-webkit-scrollbar-thumb{
   background-color: gray;
@@ -32,8 +35,9 @@
   -webkit-background-clip: text;
   background-clip: text;
   transition: .4s;
+  margin-bottom: 0;
+  margin-right: 0;
 }
-
 .nav-l {
   display: block;
   padding: .2rem 1rem;

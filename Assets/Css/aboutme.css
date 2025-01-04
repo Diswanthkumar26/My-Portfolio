@@ -162,15 +162,15 @@
         font-size: 12px;
     }
  }
- @media (min-width: 0px) and (max-width: 459.98px) {
+ @media (min-width: 400px) and (max-width: 459.98px) {
     .about-me .image-round::before {
         height: 300px;
         width: 300px;
-        left: 18%;
+        left: 15%;
         top: 8px;
     }
     .about-image{
-        padding: 2.5rem 0px 0rem 5rem !important;
+        padding: 2.5rem 0px 0rem 4.5rem !important;
     }
     .about-image img {
         width: 250px; 
@@ -184,6 +184,28 @@
         font-size: 12px;
     }
  }
+ @media (min-width: 0px) and (max-width: 399.98px){
+    .about-me .image-round::before {
+        height: 280px;
+        width: 280px;
+        left: 11%;
+        top: 8px;
+    }
+    .about-image{
+        padding: 2rem 0px 0rem 3.6rem !important;
+    }
+    .about-image img {
+        width: 220px; 
+        height: 220px;
+    }
+    .challenge{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 12px;
+    }
+ } 
 
 
 
