@@ -540,6 +540,9 @@
   .shape-2 {
     top: 40%;
   }
+  .shape-3 {
+    top: 8%;
+  }
 
 }
 @media (min-width: 0px) and (max-width: 575.98px) {
@@ -593,8 +596,11 @@
         display: none;
       }
       
-  .shape-2 {
-    top: 43%;
-  }
+     .shape-2 {
+        top: 43%;
+     }
+     .shape-3 {
+      top: 6%;
+    }
   
 }
