@@ -4,8 +4,8 @@
     display: flex;
     background-color: whitesmoke;
     padding: 10px 0;
-    min-height: 80vh;
-    margin-bottom: 10%;
+    /* min-height: 80vh; */
+    margin-bottom: 3%;
 }
 .container1{
     display: flex; 

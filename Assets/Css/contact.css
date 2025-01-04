@@ -1,6 +1,6 @@
  .contact-me{
      background-color: whitesmoke;
-     min-height: 91vh;
+     /* min-height: 91vh; */
  }
  .contact-box .contact-detials .display-5 span{
      color: #ffcd00;
@@ -121,10 +121,6 @@
     }
 }
 @media (min-width: 0px) and (max-width: 575.98px) {
-    .contact-me{
-        background-color: whitesmoke;
-        min-height: 75vh;
-    }
   .d-flex .social-icon i {
       width: 30px;
       height: 30px;

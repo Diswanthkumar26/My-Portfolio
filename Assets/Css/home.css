@@ -1,9 +1,10 @@
 .home {
-    min-height: 92vh;
+    /* min-height: 92vh; */
     align-items: center;
     display: flex;
     margin-top: 4%;
-    margin-bottom: 10%;
+    padding: 6rem 0;
+    margin-bottom: 3%;
     background-color: rgba(37, 88, 171, .05);
   }
   
@@ -481,7 +482,7 @@
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
     .home{
-        min-height: 70vh;
+        /* min-height: 70vh; */
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -530,7 +531,7 @@
 @media (min-width: 0px) and (max-width: 575.98px) {
   
     .home{
-        min-height: 60vh;
+        /* min-height: 60vh; */
         background-repeat: no-repeat;
         background-size: cover;
     }
