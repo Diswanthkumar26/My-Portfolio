@@ -1,6 +1,6 @@
 .qualifications{
     margin-bottom: 10%;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     background-color: whitesmoke;
     /* border-bottom: 2px solid #ffcd00; */
     
@@ -242,6 +242,9 @@
  }
  
  @media (min-width: 460px) and (max-width: 575.98px) {
+    /* .qualifications{
+        height: 60vh;
+    } */
     .qualifications-title{
         color: black;   
         font-size: 18px;    
@@ -306,9 +309,9 @@
     }
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-    .qualifications{
+    /* .qualifications{
         height: 60vh;
-    }
+    } */
     .qualifications-title{
         color: black;   
         font-size: 16px; 
