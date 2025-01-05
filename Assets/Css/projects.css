@@ -1,7 +1,7 @@
 .Projects{
   /* min-height: 91vh; */
   background-color: whitesmoke;
-  padding: 10rem 0;
+  padding: 3.5rem 0 6rem 0;
   margin-bottom: 3%;
   /* padding: 3rem 0; */
 }
@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
+  height: 70vh;
   gap: 100px 50px;
   padding: 100px 50px;
 }

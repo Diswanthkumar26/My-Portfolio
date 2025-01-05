@@ -336,6 +336,10 @@
     top: 85px;
     left: 775px;
   }
+  
+  .shape-2 {
+    top: 50%;
+  }
 }
 @media (min-width: 1400px) and (max-width: 1599.98px) {
   .shape-2 {
