@@ -1,6 +1,7 @@
 .Projects{
   /* min-height: 91vh; */
   background-color: whitesmoke;
+  padding: 10rem 0;
   margin-bottom: 3%;
   /* padding: 3rem 0; */
 }
@@ -33,7 +34,7 @@
   cursor: pointer;
 }
 .project-cards .card:hover{
-  height: 320px;
+  height: 400px;
 }
 .project-cards .card .imgBx{
   position: absolute;
@@ -71,7 +72,7 @@
 }
 .project-cards .card:hover .content{
   top: 120px;
-  height: 190px;
+  height: 300px;
   transition-delay: 0.1s;
 }
 .project-name{
@@ -79,6 +80,28 @@
 }
 .project-content{
   font-size: 14px;
+}
+.project-cards .card .content .icon-item .d-flex .social-icon i {
+  width: 50px;
+  height: 50px;
+  background: #ffbf00;
+  border: 2px solid #ffbf00;
+  border-radius: 50%;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  margin: 0 10px 10px ;
+  transition: .5s ease;
+  opacity: 0.7;
+  animation: slideleft 1s ease forwards;
+  animation-delay: calc(.2s*var(--1));
+}
+
+.project-cards .card .content .icon-item .d-flex .social-icon i:hover {
+  background: #ffbf00;
+  opacity: 1;
+  color: whitesmoke;
+  box-shadow: 0 0 20px #ffbf00;
 }
  .shape-1 {
     position: absolute;
