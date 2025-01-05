@@ -1,5 +1,7 @@
  .contact-me{
      background-color: whitesmoke;
+     padding-bottom: 6rem;
+     /* margin-bottom: 3%; */
      /* min-height: 91vh; */
  }
  .contact-box .contact-detials .display-5 span{
@@ -71,7 +73,7 @@
  }
  .contact-form form textarea{
      resize: none;
-     height: 150px;
+     height: 100px;
  }
  .contact-form form .send{
      display: inline-block;
