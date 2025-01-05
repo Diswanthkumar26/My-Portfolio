@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  min-height: 60vh;
   gap: 100px 50px;
   padding: 100px 50px;
 }
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 .project-cards .card:hover{
-  height: 380px;
+  height: 400px;
 }
 .project-cards .card .imgBx{
   position: absolute;
@@ -132,6 +132,9 @@
   }
 
  /* responive ===========================================================================================================	 */
+  @media (min-width: 1400px) and (max-width: 1599.98px) {
+
+ }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
 
  }
