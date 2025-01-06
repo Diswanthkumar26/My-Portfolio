@@ -1,0 +1,33 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.dot-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between rows */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Spacing between dots in a row */
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%; /* Makes the dot circular */
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-me{
+    min-height: 100vh;
+    background: linear-gradient(to right, cyan 0%, cyan 50%, darkblue 50%, darkblue 100%);
+}
+.contact-me .container .row .col-lg-4{
+    position: relative;
+    right: -9.5rem;
+    bottom: -25px;
+    z-index: 1;
+    height: 350px;
+    width: 26%;
+    padding: 2rem 1.5rem;
+    background: darkblue;
+}
+.contact-me .container .row .col-lg-4 .fw-semibold{
+    color: white;
+}
+
+.contact-me .container .row .col-lg-4 .contact-lists{
+    list-style: none;
+    font-size: 12px;
+    padding-left: 0 !important;
+}
+.contact-me .container .row .col-lg-4 .contact-lists .contact-list{
+    padding: 0.5rem 0;
+}
+.contact-me .container .row .col-lg-4 .contact-lists .contact-list a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.contact-me .container .row .col-lg-4 .icon-item .d-flex a{
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     padding: 0.5rem 1rem 0.5rem 0rem;
+}
+.contact-me .container .row .col-lg-8{
+    position: relative;
+    width: 72%;
+    background-color: white;
+    height: 400px;
+}
+.contact-me .container .row .col-lg-8 .ms-5 {
+    padding: 0 8rem;
+}
+.contact-me .container .row .col-lg-8 .ms-5 .form-group input{
+    margin-bottom: 15px;
+    box-shadow: none !important;
+    height: 48px;
+    padding-left: 20px;
+    border: 1px solid #efefef;
+    font-size: 15px;
+    border-radius: 0;
+    border: none !important;
+    border-bottom: 1px solid rgba(151, 151, 151, .5) !important;
+}    
+.contact-me .container .row .col-lg-8 .ms-5 .form-group textarea{
+    margin-bottom: 15px;
+    box-shadow: none !important;
+    height: 100px;
+    padding-left: 20px;
+    border: 1px solid #efefef;
+    font-size: 15px;
+    border-radius: 0;
+    border: none !important;
+    border-bottom: 1px solid rgba(151, 151, 151, .5) !important;
+}
+.contact-me .container .row .col-lg-8 .ms-5 .send{
+    padding: 0.5rem 2rem;
+    height: 40px;
+    border: none;
+    background: rgb(226, 9, 111);
+    color: white;
+    font-size: 15px;
+}
