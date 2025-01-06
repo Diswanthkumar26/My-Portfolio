@@ -1,0 +1,68 @@
+.qualifications{
+
+    margin-bottom: 3%;
+    min-height: 90vh;
+    background-color: whitesmoke;
+    /* border-bottom: 2px solid #ffcd00; */
+    
+}
+.qualifications-title{
+    color: black;
+    margin-bottom: 10px;
+}
+.qualifications .qualifications-box .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qualifications .nav-pills .nav-item .nav-link {
+    color: black;
+    font-weight: 600;
+    font-size: 1.0em;
+    margin: -20px 55px 0 55px;
+    border-radius: 0 !important
+}
+
+.qualifications .nav-pills .nav-item .nav-link.active,
+.qualifications .nav-pills .nav-item .nav-link:active,
+.qualifications .nav-pills .nav-item .nav-link:focus {
+    animation: color-change 6s linear infinite;
+    border-bottom: solid 2px #ff1493;
+    background-color: rgba(0, 0, 0, 0)
+}
+@keyframes color-change {
+
+    0%,
+    100% {
+        border-color: #2fb4ae
+    }
+    25% {
+        border-color: #2558ab
+    }
+
+    50% {
+        border-color: #c71f1f
+    }
+
+    75% {
+        border-color: #ffcd00
+    }
+}
+.tab-content .ul1{
+    padding-left: 0 !important;
+}
+.education-items .col-lg-4 .education-item{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ffcd00;
+    padding: 1em;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 1.4em;
+    cursor: pointer;
+}
+.education-items .col-lg-4 .education-item .education-content,p{
+    margin:.5em -0.8em;
+    line-height: 2em;
+}

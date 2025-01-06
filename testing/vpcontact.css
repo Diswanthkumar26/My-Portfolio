@@ -5,7 +5,7 @@
 }
 .contact-me{
     min-height: 100vh;
-    background: linear-gradient(to right, cyan 0%, cyan 50%, darkblue 50%, darkblue 100%);
+    background: linear-gradient(to right, cyan 0%, cyan 50%, rgb(6, 6, 41) 50%, rgb(6, 6, 41) 100%);
 }
 .contact-me .container .row .col-lg-4{
     position: relative;
@@ -15,7 +15,7 @@
     height: 350px;
     width: 26%;
     padding: 2rem 1.5rem;
-    background: darkblue;
+    background: rgb(6, 6, 41);
 }
 .contact-me .container .row .col-lg-4 .fw-semibold{
     color: white;
