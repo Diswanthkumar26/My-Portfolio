@@ -1,29 +1,12 @@
 .qualifications{
     margin-bottom: 3%;
-    /* min-height: 90vh; */
     background-color: whitesmoke;
-    /* border-bottom: 2px solid #ffcd00; */
     
 }
 .qualifications-title{
     color: black;
     margin-bottom: 10px;
 }
-/* .shape-svg1 svg{
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    
-} */
-/* .shape-svg2 svg{
-    position: absolute;
-    top: 293.5%;
-    left: 0;
-} */
-/* .qualifications .qualifications-box {
-    border-radius: 20px;
-    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
-} */
 .qualifications .qualifications-box .nav{
     display: flex;
     justify-content: center;
@@ -244,9 +227,6 @@
  }
  
  @media (min-width: 460px) and (max-width: 575.98px) {
-    /* .qualifications{
-        height: 60vh;
-    } */
     .qualifications .nav-pills .nav-item .nav-link {
         color: black;
         font-size: 0.8em;
@@ -307,12 +287,6 @@
     }
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-    /* .qualifications{
-        height: 60vh;
-    } */
-    .shape-svg2 svg{
-        top: 316.2%;
-    }
     .qualifications .nav-pills .nav-item .nav-link {
         color: black;
         font-size: 0.8em;

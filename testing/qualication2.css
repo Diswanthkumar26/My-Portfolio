@@ -52,17 +52,57 @@
     padding-left: 0 !important;
 }
 .education-items .col-lg-4 .education-item{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
     background-color: white;
-    border: 1px solid #ffcd00;
+    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08);
     padding: 1em;
     border-radius: 10px;
     letter-spacing: 1px;
     padding: 1.4em;
     cursor: pointer;
 }
+.education-items .col-lg-4 .education-item .education-content{
+    font-size: 1.2em;
+}
 .education-items .col-lg-4 .education-item .education-content,p{
     margin:.5em -0.8em;
-    line-height: 2em;
+    line-height: 1.8em;
+}
+
+
+ /* responive ===========================================================================================================	 */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .qualifications .nav-pills .nav-item .nav-link {
+       font-size: 0.8em;
+   }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .qualifications .nav-pills .nav-item .nav-link {
+       color: black;
+       font-size: 0.8em;
+       margin: -40px 75px 0 75px;;
+   }
+}
+
+@media (min-width: 460px) and (max-width: 575.98px) {
+   /* .qualifications{
+       height: 60vh;
+   } */
+   .qualifications .nav-pills .nav-item .nav-link {
+       color: black;
+       font-size: 0.8em;
+       margin: 0px 0px 0 0px;;
+   }
+}
+@media (min-width: 0px) and (max-width: 459.98px) {
+   
+   .qualifications .nav-pills .nav-item .nav-link {
+       color: black;
+       font-size: 0.8em;
+       margin: 0px 0px 0 0px;;
+   }
 }
