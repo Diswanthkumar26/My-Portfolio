@@ -109,3 +109,4 @@ document.getElementById('pills-home').classList.add('show', 'active');
     });
 });
 
+// Contact form
