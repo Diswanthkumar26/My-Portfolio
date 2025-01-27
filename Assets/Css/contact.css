@@ -15,7 +15,9 @@
      text-decoration: none;
      color: black;
  }
- 
+ .contact-me .row .col-lg-6 .icon-item{
+    padding-left: 2.3rem !important;
+ }
  .d-flex .social-icon i {
      display: inline-flex;
      justify-content: center;
