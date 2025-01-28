@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body{
   min-height: 100vh;
@@ -99,11 +98,12 @@ section{
   font-weight: 600;
 }
 
-
 .container-flui {
   flex-wrap: inherit;
 }
-
+.theme{
+  padding: 2.5px 20px;
+}
 .sidebar {
   position: fixed;
   top: 0;
