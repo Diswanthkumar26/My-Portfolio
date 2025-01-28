@@ -1,7 +1,6 @@
 .qualifications{
     margin-bottom: 3%;
     background-color: whitesmoke;
-    
 }
 .qualifications-title{
     color: black;
@@ -18,6 +17,9 @@
     font-size: 1.0em;
     margin: -20px 55px 0 55px;
     border-radius: 0 !important
+}
+.qualifications .nav-pills .nav-item i{
+    color: #ffcd00;
 }
 
 .qualifications .nav-pills .nav-item .nav-link.active,

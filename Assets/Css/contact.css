@@ -1,8 +1,6 @@
  .contact-me{
      background-color: whitesmoke;
      padding-bottom: 6rem;
-     /* margin-bottom: 3%; */
-     /* min-height: 91vh; */
  }
  .contact-box .contact-detials .display-5 span{
      color: #ffcd00;
@@ -14,6 +12,9 @@
  .contact-lists .contact-list a{
      text-decoration: none;
      color: black;
+ }
+ .contact-lists .contact-list i{
+    color: #ffbf00;
  }
  .contact-me .row .col-lg-6 .icon-item{
     padding-left: 2.3rem !important;
@@ -87,7 +88,6 @@
      letter-spacing: 1px;
      text-decoration: none;
      font-weight: 600px;
-     /* opacity: 0; */
      animation: slideTop 1s ease forwards;
      animation-delay: 2s;
      box-shadow: 0 0 5px #ffcd00, 0 0 25px #ffcd00;
