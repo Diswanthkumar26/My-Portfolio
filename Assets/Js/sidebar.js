@@ -30,7 +30,20 @@ let calcscrollValue = () => {
     scrollProgress.addEventListener("click", () => {
         document.documentElement.scrollTop = 0;
     });
-    scrollProgress.style.background = `conic-gradient(#ffbf00 ${scrollValue}%, whitesmoke ${scrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(var(--primary-color) ${scrollValue}%, var(--secondary-color) ${scrollValue}%)`;
 }
 window.onscroll = calcscrollValue;
 window.onload = calcscrollValue;
+
+// =======================================================================================================================================================
+
+// Dark theme
+var icon = document.getElementById("MS");
+theme.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        MS.src = "./Assets/images/Theme/sun.png";
+    }else{
+        MS.src = "Assets/images/Theme/moon.png";
+    }
+}
