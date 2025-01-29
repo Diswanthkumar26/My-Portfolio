@@ -3,8 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+   --primary-color: #ffbf00;
+   --secondary-color: whitesmoke;
+   --dark-color: black;
+   --light-color: white;
+   --border-color: gray;
+   --text-color: #6c757d;
+}
+.dark-theme{
+  --primary-color: #ffbf00;
+  --secondary-color: black;
+  --dark-color: white;
+  --light-color: #212121 ;
+  --border-color: gray;
+  --text-color: white;
+}
+/* #121212 
+#181818 
+#212121 
+#36454f
+#36454F (Charcoal) 
+#5A5A5A (Dark Grey)  */
+
 body{
   min-height: 100vh;
+  background-color: var(--light-color) !important;
 }
 section{
   padding-top: 3.5%;
@@ -13,27 +37,42 @@ section{
   width: 5px;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #ffbf00;
+  background-color: var(--primary-color);
   border-radius: 4px;
 }
-
+.text-muteds {
+  color: var(--text-color) !important;
+}
+a{
+  text-decoration: none !important;
+  color: var(--dark-color) !important;
+}
+a:hover {
+  color: var(--dark-color) !important;
+}
 .navbar {
   position: absolute;
-  border-bottom: 2px solid gray;
+  background-color: var(--light-color);
+  border-bottom: 2px solid var(--border-color);
   z-index: 1;
 }
-
 .nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  flex: 1;
+  text-align: right;
+}
+.nav2{
+  flex: 0;
+  text-align: left;
 }
 
 .navbar-brand {
   font-weight: 600;
-  background: linear-gradient(45deg, rgb(49, 48, 48), #ffbf00);
+  background: linear-gradient(45deg, rgb(49, 48, 48), var(--primary-color));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -51,7 +90,7 @@ section{
 }
 
 .nav-l:hover {
-  background: linear-gradient(45deg, rgb(49, 48, 48), #ffbf00);
+  background: linear-gradient(45deg, rgb(49, 48, 48), var(--primary-color));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -63,8 +102,8 @@ section{
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  background-color: whitesmoke;
-  box-shadow: 5px 5px 10px #646363;
+  background-color: var(--secondary-color);
+  box-shadow: 5px 5px 10px var(--border-color);
   transform: scale(1.2) translateY(-2px);
 }
 .nav-2 {
@@ -72,19 +111,19 @@ section{
   margin: 5px 15px;
   padding: .2rem 1rem;
   font-weight: 600;
-  color: #000000;
+  color: var(--dark-color);
   text-decoration: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 .nav-2:hover{
-  background: linear-gradient(90deg, rgb(235, 175, 87), #ffbf00);
+  background: linear-gradient(90deg, rgb(235, 175, 87), var(--primary-color));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   transition: .4s;
   width: 40%;
-  background-color: whitesmoke;
-  box-shadow: 5px 5px 10px #646363;
+  background-color: var(--secondary-color);
+  box-shadow: 5px 5px 10px var(--border-color);
   transform: scale(1.2) translateY(-2px);
 
 }
@@ -101,16 +140,13 @@ section{
 .container-flui {
   flex-wrap: inherit;
 }
-.theme{
-  padding: 2.5px 20px;
-}
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   width: 300px;
   height: 100vh;
-  background-color: #ffffff00;
+  background-color: var(--dark-color);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(235, 147, 15, 0);
   z-index: 1000;
@@ -141,9 +177,24 @@ section{
   display: flex;
 }
 
+.theme{
+  margin-left: 20px;
+  margin-top: 2.5px;
+  background: var(--secondary-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.theme img{
+  object-fit: cover;
+  padding: 5.5px 5.5px;
+} 
+
+
 /* Up Arrow */
 .scroll-Arrow{
-  background-color: #ffbf00;
+  background-color: var(--primary-color);
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -160,13 +211,13 @@ section{
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: whitesmoke;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   display: grid;
   place-items: center;
   padding: 0.65em;
   font-size: 25px;
-  color: #ffbf00;
+  color: var(--primary-color);
 }
 
 /*=================================================================== Responsive Media Queries ============================================================== */

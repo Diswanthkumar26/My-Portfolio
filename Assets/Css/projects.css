@@ -1,9 +1,10 @@
 .Projects{
-  /* min-height: 91vh; */
-  background-color: whitesmoke;
+  background-color: var(--secondary-color);
   padding: 3.5rem 0 6rem 0;
   margin-bottom: 3%;
-  /* padding: 3rem 0; */
+}
+.project-title{
+  color: var(--dark-color);
 }
 .cards-body{
   display: flex;
@@ -27,9 +28,9 @@
   align-items: flex-start;
   width: 350px;
   height: 250px;
-  background-color: whitesmoke;
+  background-color: var(--secondary-color);
   border-radius: 20px;
-  box-shadow: 0 5px 202px #ffcd00;
+  box-shadow: 0 5px 202px var(--primary-color);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -40,7 +41,7 @@
   position: absolute;
   width: 300px;
   height: 180px;
-  background-color: yellow;
+  background-color: var(--primary-color);
   top: 15px;
   left: 23px;
   border-radius: 12px;
@@ -84,11 +85,11 @@
 .project-cards .card .content .icon-item .d-flex .social-icon i {
   width: 50px;
   height: 50px;
-  background: #ffbf00;
-  border: 2px solid #ffbf00;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
   border-radius: 50%;
   font-size: 25px;
-  color: black;
+  color: var(--dark-color);
   text-decoration: none;
   margin: 0 10px 10px ;
   transition: .5s ease;
@@ -98,10 +99,10 @@
 }
 
 .project-cards .card .content .icon-item .d-flex .social-icon i:hover {
-  background: #ffbf00;
+  background: var(--primary-color);
   opacity: 1;
-  color: whitesmoke;
-  box-shadow: 0 0 20px #ffbf00;
+  color: var(--secondary-color);
+  box-shadow: 0 0 20px var(--primary-color);
 }
  .shape-1 {
     position: absolute;
@@ -142,9 +143,6 @@
  
  }
  @media (min-width: 768px) and (max-width: 991.98px) {
-  /* .Projects{
-    height: 150vh;
-  } */
  }
  @media (min-width: 576px) and (max-width: 767.98px) {
 
@@ -154,11 +152,7 @@
 
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
-  /* .cards-body{
-    height: 100vh;
-  } */
   .Projects{
-    /* min-height: 60vh; */
     margin-bottom: 10%;
   }
   .project-cards {

@@ -1,9 +1,9 @@
 .qualifications{
     margin-bottom: 3%;
-    background-color: whitesmoke;
+    background-color: var(--secondary-color);
 }
 .qualifications-title{
-    color: black;
+    color: var(--dark-color);
     margin-bottom: 10px;
 }
 .qualifications .qualifications-box .nav{
@@ -12,14 +12,14 @@
     align-items: center;
 }
 .qualifications .nav-pills .nav-item .nav-link {
-    color: black;
+    color: var(--dark-color);
     font-weight: 600;
     font-size: 1.0em;
     margin: -20px 55px 0 55px;
     border-radius: 0 !important
 }
 .qualifications .nav-pills .nav-item i{
-    color: #ffcd00;
+    color: var(--primary-color);
 }
 
 .qualifications .nav-pills .nav-item .nav-link.active,
@@ -27,7 +27,7 @@
 .qualifications .nav-pills .nav-item .nav-link:focus {
     animation: color-change 6s linear infinite;
     border-bottom: solid 2px #ff1493;
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
 }
 @keyframes color-change {
 
@@ -76,7 +76,7 @@
     height: 100px;
     padding: 10px;
     border-radius: 6px;
-    background: whitesmoke;
+    background: var(--secondary-color);
     transition: 0.5s;
     box-shadow: 0 -15px 25px rgba(159, 161, 13, 0.25);
 }
@@ -100,7 +100,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    background: white;
+    background: var(--light-color);
     transition: 0.5s;
 }
 .education-items .education-item .box img{
@@ -158,7 +158,7 @@
 .education-items .education-item:hover .box .Education-content .fs-14,
 .education-items .education-item:hover .box .Education-content .fs-10,
 .education-items .education-item:hover .box .Education-content span{
-    color: black;
+    color: var(--dark-color);
 }
 
  /* responive ===========================================================================================================	 */
@@ -171,7 +171,7 @@
  }
  @media (min-width: 576px) and (max-width: 767.98px) {
     .qualifications .nav-pills .nav-item .nav-link {
-        color: black;
+        color: var(--dark-color);
         font-size: 0.8em;
         margin: -40px 75px 0 75px;;
     }
@@ -230,7 +230,7 @@
  
  @media (min-width: 460px) and (max-width: 575.98px) {
     .qualifications .nav-pills .nav-item .nav-link {
-        color: black;
+        color: var(--dark-color);
         font-size: 0.8em;
         margin: 0px 0px 0 0px;;
     }
@@ -290,7 +290,7 @@
  }
  @media (min-width: 0px) and (max-width: 459.98px) {
     .qualifications .nav-pills .nav-item .nav-link {
-        color: black;
+        color: var(--dark-color);
         font-size: 0.8em;
         margin: 0px 0px 0 0px;;
     }

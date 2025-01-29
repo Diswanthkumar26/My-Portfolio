@@ -1,9 +1,12 @@
  .contact-me{
-     background-color: whitesmoke;
+     background-color: var(--secondary-color);
      padding-bottom: 6rem;
  }
+ .contact-me .display-5{
+    color: var(--dark-color);
+ }
  .contact-box .contact-detials .display-5 span{
-     color: #ffcd00;
+     color: var(--primary-color);
  } 
  .contact-lists{
      list-style: none;
@@ -11,10 +14,10 @@
  }
  .contact-lists .contact-list a{
      text-decoration: none;
-     color: black;
+     color: var(--dark-color);
  }
  .contact-lists .contact-list i{
-    color: #ffbf00;
+    color: var(--primary-color);
  }
  .contact-me .row .col-lg-6 .icon-item{
     padding-left: 2.3rem !important;
@@ -25,11 +28,11 @@
      align-items: center;
      width: 50px;
      height: 50px;
-     background: #ffbf00;
-     border: 2px solid #ffbf00;
+     background: var(--primary-color);
+     border: 2px solid var(--primary-color);
      border-radius: 50%;
      font-size: 30px;
-     color: black;
+     color: var(--dark-color);
      text-decoration: none;
      margin: 30px 10px;
      transition: .5s ease;
@@ -39,10 +42,10 @@
    }
    
    .d-flex .social-icon i:hover {
-     background: #ffbf00;
+     background: var(--primary-color);
      opacity: 1;
-     color: whitesmoke;
-     box-shadow: 0 0 20px #ffbf00;
+     color: var(--secondary-color);
+     box-shadow: 0 0 20px var(--primary-color);
    }
    .contact-form form{
      position: relative;
@@ -81,7 +84,7 @@
  .contact-form form .send{
      display: inline-block;
      padding: 14px 60px;
-     background: #ffcd00;
+     background: var(--primary-color);
      border-radius: 40px;
      font-size: 18px;
      color: #081b29;
@@ -90,7 +93,7 @@
      font-weight: 600px;
      animation: slideTop 1s ease forwards;
      animation-delay: 2s;
-     box-shadow: 0 0 5px #ffcd00, 0 0 25px #ffcd00;
+     box-shadow: 0 0 5px var(--primary-color), 0 0 25px var(--primary-color);
  }
  .contact-form form .send:hover{
      box-shadow: 0 0 5px #ffcd00,
