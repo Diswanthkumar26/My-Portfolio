@@ -288,7 +288,7 @@
         font-size: 12px;
     }
  }
- @media (min-width: 0px) and (max-width: 459.98px) {
+ @media (min-width: 360px) and (max-width: 459.98px) {
     .qualifications .nav-pills .nav-item .nav-link {
         color: var(--dark-color);
         font-size: 0.8em;
@@ -317,6 +317,80 @@
     .education-items .education-item .box img {
         max-width: 45px;
         height: 45px;
+    }
+    .education-items .education-item:hover .box{
+        transform: translateX(-30px);
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+ }
+
+ @media (min-width: 0px) and (max-width: 359.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .education-items{
+        height: 300px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 300px;
+        height: 70px;
+        padding: 4px;
+    }
+    .education-items .education-item .box {
+        gap: 4px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+    .education-items .education-item .box .Education-content span{
+        font-size: 10px;
+    }
+    .education-items .education-item .box img {
+        max-width: 45px;
+        height: 45px;
+    }
+    .education-items .education-item:hover .box{
+        transform: translateX(-20px);
     }
     .education-items .education-item:nth-child(1) {
         transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
