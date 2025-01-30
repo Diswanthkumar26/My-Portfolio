@@ -47,3 +47,22 @@ theme.onclick = function(){
         MS.src = "Assets/images/Theme/moon.png";
     }
 }
+
+// logo & About profile change on dark theme
+
+function changelogo(){
+    var img = document.getElementById("logo");
+    var luffy = document.getElementById("luffy");
+    if(document.body.classList.contains("dark-theme")){
+        img.src = "./Assets/images/logo-removebg-preview.png";
+        luffy.src = "./Assets/images/aboutme/Luffy_Icons-removebg-preview.png";
+    }else{
+        img.src = "./Assets/images/image (1).png";
+        // luffy.src = "./Assets/images/aboutme/Monkey_D__Luffy-removebg-preview.png";
+        luffy.src = "./Assets/images/aboutme/ʟᴜғғʏ-removebg-preview.png";
+        // luffy.src = "./Assets/images/aboutme/download__1_-removebg-preview.png";
+        // luffy.src = "./Assets/images/aboutme/download__2_-removebg-preview.png";
+        // luffy.src = "./Assets/images/aboutme/download__3_-removebg-preview.png";
+        // luffy.src = "./Assets/images/aboutme/kaizoku-oou_mugiwara_no_luffy-removebg-preview.png";
+    }
+}

@@ -26,7 +26,8 @@
     <header class="container-fluid ps-0 pe-0">
         <nav class="navbar navbar-light fixed-top sticky">
             <div class="container-fluid ">
-                <p class="navbar-brand"><img src="./Assets/images/logo-removebg-preview.png" alt="logo" id="logo" width="30px" height="30px">  portfolio</p>
+                <p class="navbar-brand">
+                    <img src="./Assets/images/logo-removebg-preview.png" alt="logo" id="logo" width="30px" height="30px"> portfolio</p>
                 <ul class="nav justify-content-end">
                     <li class="nav-item hideOnMobile">
                         <a class="nav-l " href="#home">Home</a>
@@ -46,15 +47,8 @@
                     <li class="nav-item hideOnMobile">
                         <a class="nav-l disabled text-secondary" href="#contactme">Contact</a>
                     </li>
-                    <li onclick="showSidebar()" class="nav-item1 hideOnLargeScreen">
-                        <!-- <a class="nav-1 " href="#"> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                        <!-- </a> -->
-                    </li>
+                   
                 </ul>
-                <li class="nav-item theme" id="theme">
-                    <img src="./Assets/images/Theme/moon.png" alt="moon" id="MS">
-                </li>
             </div>
             <div class=" container-flui sidebar" id="sidebar">
                 <ul class="nav nav2">
@@ -83,6 +77,14 @@
                     </li>
                 </ul>
             </div>
+            <span  class="nav-item d-flex theme" id="theme">
+                <img onclick="changelogo()" src="./Assets/images/Theme/moon.png" alt="moon" id="MS">
+            </span>
+            <li onclick="showSidebar()" class="nav-item1  hideOnLargeScreen me-1">
+                <!-- <a class="nav-1 " href="#"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                <!-- </a> -->
+            </li>
         </nav>
     </header>
 <!-- ========================================================================== Navbar End ============================================================-->
@@ -162,7 +164,7 @@
                 <div class="col-lg-6 position-relative">
                     <div class="image-round">
                         <div class="about-image  pb-0">
-                            <img src="./Assets/images/aboutme/Luffy_Icons-removebg-preview.png" alt="" class="img-fluidm">
+                            <img src="./Assets/images/aboutme/Luffy_Icons-removebg-preview.png" id="luffy" alt="" class="img-fluidm">
                         </div>
                     </div>
                     

@@ -50,10 +50,14 @@ a{
 a:hover {
   color: var(--dark-color) !important;
 }
+svg{
+  fill: var(--dark-color) !important;
+}
 .navbar {
   position: absolute;
   background-color: var(--light-color);
   border-bottom: 2px solid var(--border-color);
+  flex-wrap: unset !important;
   z-index: 1;
 }
 .nav {
@@ -146,7 +150,7 @@ a:hover {
   right: 0;
   width: 300px;
   height: 100vh;
-  background-color: var(--dark-color);
+  /* background-color: var(--dark-color); */
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(235, 147, 15, 0);
   z-index: 1000;
@@ -179,7 +183,7 @@ a:hover {
 
 .theme{
   margin-left: 20px;
-  margin-top: 2.5px;
+  margin-right: 20px;
   background: var(--secondary-color);
   width: 30px;
   height: 30px;
@@ -256,6 +260,10 @@ a:hover {
   .hideOnLargeScreen{
     display: flex;
   }
+  .theme{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .scroll-Arrow{
     height: 50px;
     width: 50px;
@@ -277,6 +285,10 @@ a:hover {
   }
   .hideOnLargeScreen{
     display: flex;
+  }
+  .theme{
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .scroll-Arrow{
     height: 45px;
