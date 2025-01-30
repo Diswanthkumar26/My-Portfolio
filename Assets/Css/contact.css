@@ -127,7 +127,7 @@
         font-size: 20px;
     }
 }
-@media (min-width: 0px) and (max-width: 575.98px) {
+@media (min-width: 360px) and (max-width: 575.98px) {
   .d-flex .social-icon i {
       width: 30px;
       height: 30px;
@@ -135,5 +135,14 @@
   }
   
 }  
- 
+@media (min-width: 0px) and (max-width: 359.98px){
+    .contact-lists .contact-list a{
+        font-size: 12px;
+    }
+    .d-flex .social-icon i {
+        width: 30px;
+        height: 30px;
+        font-size: 19.5px;
+    }
+} 
    

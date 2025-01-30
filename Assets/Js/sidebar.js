@@ -58,8 +58,8 @@ function changelogo(){
         luffy.src = "./Assets/images/aboutme/Luffy_Icons-removebg-preview.png";
     }else{
         img.src = "./Assets/images/image (1).png";
-        // luffy.src = "./Assets/images/aboutme/Monkey_D__Luffy-removebg-preview.png";
-        luffy.src = "./Assets/images/aboutme/ʟᴜғғʏ-removebg-preview.png";
+        luffy.src = "./Assets/images/aboutme/Monkey_D__Luffy-removebg-preview.png";
+        // luffy.src = "./Assets/images/aboutme/ʟᴜғғʏ-removebg-preview.png";
         // luffy.src = "./Assets/images/aboutme/download__1_-removebg-preview.png";
         // luffy.src = "./Assets/images/aboutme/download__2_-removebg-preview.png";
         // luffy.src = "./Assets/images/aboutme/download__3_-removebg-preview.png";
