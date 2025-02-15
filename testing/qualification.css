@@ -5,7 +5,7 @@
 }
 .qualifications{
     height: 100vh;
-    background-color: #ffcd00;
+    /* background-color: #ffcd00; */
     
 }
 .qualifications-title{
@@ -27,10 +27,7 @@
     top: 53%;
     left: 0;
 }
-.qualifications .qualifications-box {
-    border-radius: 20px;
-    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08)
-}
+
 .qualifications .qualifications-box .nav{
     position: absolute;
     left: 28%;

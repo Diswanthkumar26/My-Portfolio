@@ -48,32 +48,53 @@
         border-color: #ffcd00
     }
 }
-.tab-content .ul1{
-    padding-left: 0 !important;
+.education-items{
+    position: absolute;
 }
-.education-items .col-lg-4 .education-item{
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08);
-    padding: 1em;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    padding: 1.4em;
-    cursor: pointer;
+.education-items .education-item{
+    list-style: none !important;
 }
-.education-items .col-lg-4 .education-item .education-content{
-    font-size: 1.2em;
+.education-item .card {
+    position: relative;
+    width: 320px;
+    height: 380px;
+    margin: 20px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    transition: transform 0.3s ease; /* Add smooth transition */
 }
-.education-items .col-lg-4 .education-item .education-content,p{
-    margin:.5em -0.8em;
-    line-height: 1.8em;
+
+.education-item .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
 }
+
+.education-item .card:hover .box {
+    transform: scale(1.05); /* Optional: Apply slight scale to the box as well */
+}
+
+
+
+
+
 
 
  /* responive ===========================================================================================================	 */
- @media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
    .qualifications .nav-pills .nav-item .nav-link {
