@@ -6,6 +6,9 @@
     color: var(--dark-color);
     margin-bottom: 10px;
 }
+.qualifications .qualifications-box .row{
+   width: 100%;
+}
 .qualifications .qualifications-box .nav{
     display: flex;
     justify-content: center;
@@ -47,119 +50,93 @@
         border-color: #ffcd00
     }
 }
-.tab-content .ul1{
-    padding-left: 0 !important;
-}
 .education-items{
     position: relative;
     transform-style: preserve-3d;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: start;
-    height: 400px;
-    gap: 0px;
+    padding-bottom: 3%;
+    padding-left: 0rem !important;
+    flex-direction: row;
+    justify-content: center;
     transition: 0.5s;
     z-index: 1;
 }
-.education-items:hover{
+.education-items .row{
     gap: 20px;
 }
-.ul2{
+.cards{
+    flex: 1 0 0%;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-
-.education-items .education-item{
+.cards .card{
+    height: 180px;
+    width: 380px;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 28px;
+    padding: 1rem 3%;
     position: relative;
-    list-style: none;
-    width: 450px;
-    height: 100px;
-    padding: 10px;
-    border-radius: 6px;
-    background: var(--secondary-color);
-    transition: 0.5s;
-    box-shadow: 0 -15px 25px rgba(159, 161, 13, 0.25);
-}
-.education-items .education-item:nth-child(1){
-    transform: translateZ(100px) translate(35px, 100px) rotate(23deg);
-}
-.education-items .education-item:nth-child(2){
-    transform: translateZ(80px) translate(50px,20px) rotate(5deg);
-}
-.education-items .education-item:nth-child(3){
-    transform: translateZ(75px) translate(10px,-60px) rotate(-25deg);
-}
-.education-items .education-item:hover .box{
-    transform: translateX(-50px);
-    box-shadow: 0 -15px 25px rgba(0, 0, 0, .25);
-}
-.education-items:hover .education-item{
-    transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-}
-.education-items .education-item .box{
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    background: var(--light-color);
-    transition: 0.5s;
-}
-.education-items .education-item .box img{
-    max-width: 70px;
-    height: 70px;
-    border-radius: 5px;
-}
-.ul2 .education-item .box img{
-    transform: 0.5s;
-}
-.ul2 .education-item:nth-child(1){
-    transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
-}
-.ul2:hover .education-item{
-    transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    
-} 
-.ul3 .education-item .box img{
-    max-width: 80px;
-    height: 70px;
-    border-radius: 5px;
-    transform: 0.5s;
-}
-.ul3 .education-item:nth-child(1){
-    transform: translateZ(75px) translate(-50px, 100px) rotate(12deg);
-}
-.ul3 .education-item:nth-child(2){
-    transform: translateZ(-75px) translate(-30px, 30px) rotate(-22deg);
-}
-.ul3:hover .education-item{
-    transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-} 
-.education-items .education-item .box .Education-content{
-    width: 100%;
-    cursor: pointer;
-}
-.education-items .education-item .box .Education-content .fs-14{ 
-    font-weight: 600;
-    color: #aaa;
-    transition: 0.5s;
-
-}
-.education-items .education-item .box .Education-content .fs-10{
-    position: relative;
-    width: 100%;
-    line-height: 0em;
-    color: #aaa;
-    transition: 0.5s;
-}
-.education-items .education-item .box .Education-content span{
-    color: #aaa;
-    transition: 0.5s;
-    font-size: 0.75em;
-}
-.education-items .education-item:hover .box .Education-content .fs-14,
-.education-items .education-item:hover .box .Education-content .fs-10,
-.education-items .education-item:hover .box .Education-content span{
+    z-index: 1;
+    background-color: var(--light-color);
+    overflow: hidden;
     color: var(--dark-color);
+    transition: .6s;
 }
+.ul2 .cards .card{
+    padding: 3rem 0% !important;
+    height: 400px;
+    width: 250;
+}
+.ul2 .cards .card p{
+    text-align: justify;
+    padding: 0 20px;
+}
+.cards .card::after{
+    position: absolute;
+    content: "";
+    height: 40%;
+    width: 8%;
+    top: 30%;
+    right: -4%;
+    background-color: var(--primary-color);
+    border-radius: 28px;
+    z-index: -1;
+    transition: .6s;
+}
+.cards .card:hover{
+    color: var(--light-color);
+}
+.cards .card:hover::after{
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+}
+.cards .card .education-logo{
+    display: flex;
+    flex-direction: row;
+}
+.cards .card .education-logo img{
+    width: 70px;
+    height: 70px;
+}
+.ul2 .cards .card .education-logo img {
+    width: 90px;
+    padding-left: 11px;
+    height: 70px;
+}
+.ul3 .cards .card .education-logo{
+    gap: 5px;
+}
+.cards .card .education-logo h3{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
  /* responive ===========================================================================================================	 */
  @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -175,57 +152,7 @@
         font-size: 0.8em;
         margin: -40px 75px 0 75px;;
     }
-    .education-items{
-        height: 350px;
-        padding-left: 0rem;
-    }
-    .education-items:hover {
-        gap: 10px;
-    }
-    .education-items .education-item {
-        width: 400px;
-        height: 90px;
-        padding: 4px;
-    }
-
-    .education-items .education-item .box img {
-        max-width: 60px;
-        height: 60px;
-    }
-    .education-items .education-item:nth-child(1) {
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .education-items .education-item:nth-child(2) {
-        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
-    }
-    .education-items .education-item:nth-child(3) {
-        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
-    }
-    .education-items:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .ul2 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
-    }
-    .ul2:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-        
-    } 
-    .ul3 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .ul3 .education-item:nth-child(2){
-        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
-    }
-    .ul3:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .education-items .education-item .box .Education-content .fs-14 {
-        font-size: 18px;
-    } 
-    .box .Education-content .fs-10 {
-        font-size: 14px;
-    }
+    
  }
  
  @media (min-width: 460px) and (max-width: 575.98px) {
@@ -234,59 +161,7 @@
         font-size: 0.8em;
         margin: 0px 0px 0 0px;;
     }
-    .education-items{
-        height: 300px;
-        padding-left: 0rem;
-    }
-    .education-items:hover {
-        gap: 30px;
-    }
-    .education-items .education-item {
-        width: 350px;
-        height: 80px;
-        padding: 4px;
-    }
-    .education-items .education-item .box {
-        gap: 5px;
-    }
-    .education-items .education-item .box img {
-        max-width: 50px;
-        height: 50px;
-    }
-    .education-items .education-item:nth-child(1) {
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .education-items .education-item:nth-child(2) {
-        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
-    }
-    .education-items .education-item:nth-child(3) {
-        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
-    }
-    .education-items:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .ul2 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
-    }
-    .ul2:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-        
-    } 
-    .ul3 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .ul3 .education-item:nth-child(2){
-        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
-    }
-    .ul3:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .education-items .education-item .box .Education-content .fs-14 {
-        font-size: 16px;
-    } 
-    .box .Education-content .fs-10 {
-        font-size: 12px;
-    }
+    
  }
  @media (min-width: 360px) and (max-width: 459.98px) {
     .qualifications .nav-pills .nav-item .nav-link {
@@ -294,69 +169,13 @@
         font-size: 0.8em;
         margin: 0px 0px 0 0px;;
     }
-    .education-items{
-        height: 300px;
-        padding-left: 0rem;
+    .qualifications .qualifications-box .row{
+        --bs-gutter-x: 1rem !important;
     }
-    .education-items:hover {
-        gap: 10px;
+    .cards .card .education-logo h3{
+        font-size: 1.2rem;
     }
-    .education-items .education-item {
-        width: 300px;
-        height: 70px;
-        padding: 4px;
-    }
-    .education-items .education-item .box {
-        gap: 4px;
-        height: 60px;
-        margin-bottom: 0.5rem;
-    }
-    .education-items .education-item .box .Education-content span{
-        font-size: 10px;
-    }
-    .education-items .education-item .box img {
-        max-width: 45px;
-        height: 45px;
-    }
-    .education-items .education-item:hover .box{
-        transform: translateX(-30px);
-    }
-    .education-items .education-item:nth-child(1) {
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .education-items .education-item:nth-child(2) {
-        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
-    }
-    .education-items .education-item:nth-child(3) {
-        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
-    }
-    .education-items:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .ul2 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
-    }
-    .ul2:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-        
-    } 
-    .ul3 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .ul3 .education-item:nth-child(2){
-        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
-    }
-    .ul3:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .education-items .education-item .box .Education-content .fs-14 {
-        font-size: 14px;
-        margin-bottom: 0.5rem;
-    } 
-    .box .Education-content .fs-10 {
-        font-size: 10px;
-        margin-bottom: 0.5rem;
-    }
+    
  }
 
  @media (min-width: 0px) and (max-width: 359.98px) {
@@ -365,67 +184,11 @@
         font-size: 0.8em;
         margin: 0px 0px 0 0px;;
     }
-    .education-items{
-        height: 300px;
-        padding-left: 0rem;
+    .qualifications .qualifications-box .row{
+        --bs-gutter-x: 0.2rem !important;
     }
-    .education-items:hover {
-        gap: 10px;
+    .cards .card .education-logo h3{
+        font-size: 1rem;
     }
-    .education-items .education-item {
-        width: 300px;
-        height: 70px;
-        padding: 4px;
-    }
-    .education-items .education-item .box {
-        gap: 4px;
-        height: 60px;
-        margin-bottom: 0.5rem;
-    }
-    .education-items .education-item .box .Education-content span{
-        font-size: 10px;
-    }
-    .education-items .education-item .box img {
-        max-width: 45px;
-        height: 45px;
-    }
-    .education-items .education-item:hover .box{
-        transform: translateX(-20px);
-    }
-    .education-items .education-item:nth-child(1) {
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .education-items .education-item:nth-child(2) {
-        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
-    }
-    .education-items .education-item:nth-child(3) {
-        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
-    }
-    .education-items:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .ul2 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
-    }
-    .ul2:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-        
-    } 
-    .ul3 .education-item:nth-child(1){
-        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
-    }
-    .ul3 .education-item:nth-child(2){
-        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
-    }
-    .ul3:hover .education-item{
-        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
-    }
-    .education-items .education-item .box .Education-content .fs-14 {
-        font-size: 14px;
-        margin-bottom: 0.5rem;
-    } 
-    .box .Education-content .fs-10 {
-        font-size: 10px;
-        margin-bottom: 0.5rem;
-    }
+    
  }

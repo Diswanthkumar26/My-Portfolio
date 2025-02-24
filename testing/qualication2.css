@@ -1,26 +1,44 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
 .qualifications{
-
-    margin-bottom: 3%;
-    min-height: 90vh;
-    background-color: whitesmoke;
-    /* border-bottom: 2px solid #ffcd00; */
+    height: 100vh;
+    /* background-color: #ffcd00; */
     
 }
 .qualifications-title{
+    position: absolute;
     color: black;
-    margin-bottom: 10px;
+    z-index: 1;
+    left: 43%;
+
 }
+.shape-svg1 svg{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 1;
+    
+}
+.shape-svg2 svg{
+    position: absolute;
+    top: 53%;
+    left: 0;
+}
+
 .qualifications .qualifications-box .nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 28%;
+    z-index: 1;
 }
 .qualifications .nav-pills .nav-item .nav-link {
     color: black;
     font-weight: 600;
     font-size: 1.0em;
-    margin: -20px 55px 0 55px;
-    border-radius: 0 !important
+    margin: 20px 45px 0 45px;
+    border-radius: 0 !important;
 }
 
 .qualifications .nav-pills .nav-item .nav-link.active,
@@ -48,43 +66,58 @@
         border-color: #ffcd00
     }
 }
+
 .education-items{
     position: absolute;
-}
-.education-items .education-item{
-    list-style: none !important;
-}
-.education-item .card {
-    position: relative;
-    width: 320px;
-    height: 380px;
-    margin: 20px;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    transition: transform 0.3s ease; /* Add smooth transition */
-}
-
-.education-item .card .box {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: #ebf5fc;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    transform-style: preserve-3d;
     display: flex;
-    justify-content: center;
+    /* flex-direction: column; */
     align-items: center;
-    transition: 0.3s;
+    justify-content: center;
+    /* height: 400px; */
+    gap: 20px;
+    top: 28%;
+    /* left: 5.5%; */
+    transition: 0.5s;
+    z-index: 1;
 }
+.cards .card{
+    height: 220px;
+    width: 380px;
+    border: 0.5px solid #ffcd00;
+    border-radius: 28px;
+    padding: 3rem 8%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+    transition: .6s;
+}
+.cards .card::after{
+    position: absolute;
+    content: "";
+    height: 40%;
+    width: 8%;
+    top: 30%;
+    right: -4%;
+    background-color: #ffcd00;
+    border-radius: 28px;
+    z-index: -1;
+    transition: .6s;
+}
+.cards .card:hover{
+    color: white;
+}
+.cards .card:hover::after{
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+}
+.row {
+    --bs-gutter-x: 0rem !important;
+}   
 
-.education-item .card:hover .box {
-    transform: scale(1.05); /* Optional: Apply slight scale to the box as well */
-}
 
 
 

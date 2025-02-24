@@ -159,4 +159,22 @@
     gap: 100px 50px;
     padding: 100px 0px 20px 0px;
  }
+ .project-name {
+  font-size: 11px;
+  font-weight: 600;
+}
+ .project-cards .card{
+  width: 250px;
+  height: 250px;
+}
+.project-cards .card:hover .content {
+  top: 70px;
+  height: 330px;
+  transition-delay: 0.1s;
+}
+ .project-cards .card .imgBx{
+  position: absolute;
+  width: 205px;
+  height: 180px;
+}
  }

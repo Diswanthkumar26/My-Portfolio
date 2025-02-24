@@ -137,12 +137,16 @@
 }  
 @media (min-width: 0px) and (max-width: 359.98px){
     .contact-lists .contact-list a{
-        font-size: 12px;
+        font-size: 9px;
     }
     .d-flex .social-icon i {
         width: 30px;
         height: 30px;
         font-size: 19.5px;
     }
+    .contact-form form .send{
+        padding: 14px 50px;
+    }
 } 
+
    
