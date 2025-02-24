@@ -1,0 +1,431 @@
+.qualifications{
+    margin-bottom: 3%;
+    background-color: var(--secondary-color);
+}
+.qualifications-title{
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+.qualifications .qualifications-box .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qualifications .nav-pills .nav-item .nav-link {
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 1.0em;
+    margin: -20px 55px 0 55px;
+    border-radius: 0 !important
+}
+.qualifications .nav-pills .nav-item i{
+    color: var(--primary-color);
+}
+
+.qualifications .nav-pills .nav-item .nav-link.active,
+.qualifications .nav-pills .nav-item .nav-link:active,
+.qualifications .nav-pills .nav-item .nav-link:focus {
+    animation: color-change 6s linear infinite;
+    border-bottom: solid 2px #ff1493;
+    background-color: rgba(0, 0, 0, 0);
+}
+@keyframes color-change {
+
+    0%,
+    100% {
+        border-color: #2fb4ae
+    }
+    25% {
+        border-color: #2558ab
+    }
+
+    50% {
+        border-color: #c71f1f
+    }
+
+    75% {
+        border-color: #ffcd00
+    }
+}
+.tab-content .ul1{
+    padding-left: 0 !important;
+}
+.education-items{
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 400px;
+    gap: 0px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.education-items:hover{
+    gap: 20px;
+}
+.ul2{
+    justify-content: center;
+}
+
+.education-items .education-item{
+    position: relative;
+    list-style: none;
+    width: 450px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 6px;
+    background: var(--secondary-color);
+    transition: 0.5s;
+    box-shadow: 0 -15px 25px rgba(159, 161, 13, 0.25);
+}
+.education-items .education-item:nth-child(1){
+    transform: translateZ(100px) translate(35px, 100px) rotate(23deg);
+}
+.education-items .education-item:nth-child(2){
+    transform: translateZ(80px) translate(50px,20px) rotate(5deg);
+}
+.education-items .education-item:nth-child(3){
+    transform: translateZ(75px) translate(10px,-60px) rotate(-25deg);
+}
+.education-items .education-item:hover .box{
+    transform: translateX(-50px);
+    box-shadow: 0 -15px 25px rgba(0, 0, 0, .25);
+}
+.education-items:hover .education-item{
+    transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+}
+.education-items .education-item .box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    background: var(--light-color);
+    transition: 0.5s;
+}
+.education-items .education-item .box img{
+    max-width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+.ul2 .education-item .box img{
+    transform: 0.5s;
+}
+.ul2 .education-item:nth-child(1){
+    transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+}
+.ul2:hover .education-item{
+    transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    
+} 
+.ul3 .education-item .box img{
+    max-width: 80px;
+    height: 70px;
+    border-radius: 5px;
+    transform: 0.5s;
+}
+.ul3 .education-item:nth-child(1){
+    transform: translateZ(75px) translate(-50px, 100px) rotate(12deg);
+}
+.ul3 .education-item:nth-child(2){
+    transform: translateZ(-75px) translate(-30px, 30px) rotate(-22deg);
+}
+.ul3:hover .education-item{
+    transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+} 
+.education-items .education-item .box .Education-content{
+    width: 100%;
+    cursor: pointer;
+}
+.education-items .education-item .box .Education-content .fs-14{ 
+    font-weight: 600;
+    color: #aaa;
+    transition: 0.5s;
+
+}
+.education-items .education-item .box .Education-content .fs-10{
+    position: relative;
+    width: 100%;
+    line-height: 0em;
+    color: #aaa;
+    transition: 0.5s;
+}
+.education-items .education-item .box .Education-content span{
+    color: #aaa;
+    transition: 0.5s;
+    font-size: 0.75em;
+}
+.education-items .education-item:hover .box .Education-content .fs-14,
+.education-items .education-item:hover .box .Education-content .fs-10,
+.education-items .education-item:hover .box .Education-content span{
+    color: var(--dark-color);
+}
+
+ /* responive ===========================================================================================================	 */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        font-size: 0.8em;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: -40px 75px 0 75px;;
+    }
+    .education-items{
+        height: 350px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 400px;
+        height: 90px;
+        padding: 4px;
+    }
+
+    .education-items .education-item .box img {
+        max-width: 60px;
+        height: 60px;
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 18px;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 14px;
+    }
+ }
+ 
+ @media (min-width: 460px) and (max-width: 575.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .education-items{
+        height: 300px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 30px;
+    }
+    .education-items .education-item {
+        width: 350px;
+        height: 80px;
+        padding: 4px;
+    }
+    .education-items .education-item .box {
+        gap: 5px;
+    }
+    .education-items .education-item .box img {
+        max-width: 50px;
+        height: 50px;
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 16px;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 12px;
+    }
+ }
+ @media (min-width: 360px) and (max-width: 459.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .education-items{
+        height: 300px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 300px;
+        height: 70px;
+        padding: 4px;
+    }
+    .education-items .education-item .box {
+        gap: 4px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+    .education-items .education-item .box .Education-content span{
+        font-size: 10px;
+    }
+    .education-items .education-item .box img {
+        max-width: 45px;
+        height: 45px;
+    }
+    .education-items .education-item:hover .box{
+        transform: translateX(-30px);
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+ }
+
+ @media (min-width: 0px) and (max-width: 359.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .education-items{
+        height: 300px;
+        padding-left: 0rem;
+    }
+    .education-items:hover {
+        gap: 10px;
+    }
+    .education-items .education-item {
+        width: 300px;
+        height: 70px;
+        padding: 4px;
+    }
+    .education-items .education-item .box {
+        gap: 4px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+    .education-items .education-item .box .Education-content span{
+        font-size: 10px;
+    }
+    .education-items .education-item .box img {
+        max-width: 45px;
+        height: 45px;
+    }
+    .education-items .education-item:hover .box{
+        transform: translateX(-20px);
+    }
+    .education-items .education-item:nth-child(1) {
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .education-items .education-item:nth-child(2) {
+        transform: translateZ(80px) translate(0px, 20px) rotate(5deg);
+    }
+    .education-items .education-item:nth-child(3) {
+        transform: translateZ(75px) translate(10px, -52px) rotate(-25deg);
+    }
+    .education-items:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .ul2 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, -20px) rotate(23deg);
+    }
+    .ul2:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+        
+    } 
+    .ul3 .education-item:nth-child(1){
+        transform: translateZ(100px) translate(10px, 100px) rotate(23deg);
+    }
+    .ul3 .education-item:nth-child(2){
+        transform: translateZ(-75px) translate(0px, 35px) rotate(-6deg);
+    }
+    .ul3:hover .education-item{
+        transform: translateZ(0px) translate(0px,0px) rotate(0deg);
+    }
+    .education-items .education-item .box .Education-content .fs-14 {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    } 
+    .box .Education-content .fs-10 {
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+ }
