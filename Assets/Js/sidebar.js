@@ -68,3 +68,27 @@ function changelogo(){
         // luffy.src = "./Assets/images/aboutme/kaizoku-oou_mugiwara_no_luffy-removebg-preview.png";
     }
 }
+
+// =======================================================================================================================================================
+
+// contact form
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    let formData = new FormData(this);
+
+    fetch(this.action, {
+        method: this.method,
+        body: formData
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            alert("Form submitted successfully!");
+            this.reset(); 
+        } else {
+            alert("Error submitting the form!");
+        }
+    })
+    .catch(error => console.error("Error:", error));
+});

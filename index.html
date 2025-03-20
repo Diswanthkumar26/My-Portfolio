@@ -615,14 +615,13 @@
                 </div>
                 <div class="col-lg-6 position-relative d-flex justify-content-center align-items-center">
                     <div class="contact-form ms-5">
-                        <form action="">
-                            <input type="" placeholder="Name" required>
-                            <input type="email" placeholder="Enter Your Email" required>
-                            <input type="phone no" placeholder="Enter your phone number" required>
-                            <input type="" placeholder="Enter Your Subject" required>
-                            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"
-                                required></textarea>
-                            <input type="submit" value="submit" class="send">
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="02fd38cb-590a-436c-9c48-2f27ec376860">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Enter Your Email" required>
+                            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                            <textarea name="comments" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                            <input type="submit" value="Submit" class="send">
                         </form>
                     </div>
                 </div>
